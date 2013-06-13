@@ -1,0 +1,44 @@
+<script src="createMacros.js">
+</script>
+
+<table cellpadding="5" style="vertical-align:middle, text-align:left">
+	<form name="parameters" action="">
+	<caption align="bottom" style="font-size:12px">Enter your bodyweight in Kg, select whether you want "Fat Loss" or "Muscle Gain" from the drop down menu and hit the Create Macros button!</caption>
+	<tbody>
+		<tr>
+			<td><input name="bodyWeight" placeholder="Bodyweight in Kg"></td>
+			<td><select name="dietChoice" id="dietChoice">
+				<option value="Fat Loss">Fat Loss</option>
+				<option value="Muscle Gain">Muscle Gain</option>
+				</select></td>	
+			<td><input type="button" onclick="createMacros()" value="Create Macros" name="Create Macros"></td>
+		</tr>
+	</form>
+		<tr>
+	<form name="outputs">
+			<th style="text-align:left">Daily Calories</th>
+			<td><input name="calories" placeholder="Total Calories" readonly><td>
+			<td> </td><hr>
+		</tr>
+		<tr>
+			<th></th>
+			<th style="text-align:left">Protein (g)</th>
+			<th style="text-align:left">Carbs (g)</th>
+			<th style="text-align:left">Fat (g)</th>
+		</tr>
+		<tr>
+			<th style="text-align:left">Training Day</th>
+			<td><input name="proteinOn" readonly></td>
+			<td><input name="carbsOn" readonly></td>
+			<td><input name="fatOn" readonly></td>
+		</tr>	
+		<tr>
+			<th style="text-align:left">Rest Day</th>
+			<td><input name="proteinOff" readonly></td>
+			<td><input name="carbsOff" readonly></td>
+			<td><input name="fatOff" readonly></td>
+		</tr>
+		<tr><td></td><td><br></td></tr>
+	</tbody>
+	</form>
+</table>
